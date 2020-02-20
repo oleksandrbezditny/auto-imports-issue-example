@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "es6", "dom.iterable"],
+    "target": "es6",
+    "sourceMap": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "noStrictGenericChecks": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "rxjs": ["./sub-module/node_modules/rxjs"],
+      "rxjs/*": ["./sub-module/node_modules/rxjs/*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
